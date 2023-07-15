@@ -1,0 +1,87 @@
+.header {
+    background-color: $bg-white;
+    width:$width-height_100;
+    position: absolute;
+    padding: $padding_25_30px;
+    border-radius:$radius_5px;
+
+    &__logo {
+        width:200px;
+
+        &__img {
+            width:$width-height_100;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .header {
+        @include displayFlex(space-between, center);
+        width: 700px;
+        width:$width-80;
+        margin: auto;
+        top: $rem_2;
+        right:$rem_2;
+
+
+        &__logo {
+            width: 15vh;
+        }
+
+        background-image: url(../img/p8.jpg);
+
+
+
+
+
+
+    }
+
+
+
+}
+
+
+@media screen and (min-width:768px) {
+    .header {
+        @include displayFlex(space-around, center);
+        width:$width-80;
+        margin: auto;
+        top: $rem_2;
+        left: 9em;
+
+        &__hamburger {
+            display: none; 
+        }
+
+        &__title {
+            @include displayFlex(center, center);
+
+            &__button {
+                border-radius:$radius_5px;
+                background-color:$bg-blue;
+                color: $bg-white;
+                padding:$padding_10_30px;
+
+                &:hover{
+                    background-color:#1c438b;
+                    transform: scale(1.03);
+                }
+            }
+
+
+            &__icon {
+                padding-left: $rem_2;
+                font-size:$xx_lg;
+            }
+
+            &__information {
+                padding-left: $rem_2;
+            }
+
+
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.boxForm{
+    @media screen and (max-width: 768px) {
+      &__img{
+         &__poster{
+            display: none;
+           }
+
+           &__logo{
+            position: absolute;
+            left:110px;
+            top: 5vh;
+    
+         }
+
+      }
+      background-color:$bg-blue;
+      height: $full-vh;
+    }
+    @media screen and (min-width:768px) {
+     width: $width-80;
+     background-color:$bg-blue;
+     height: $full-vh;
+     margin-right: $margin-20;
+ 
+     &__img{
+      &__poster{
+         border-radius: $px_10;
+         position: absolute;
+         bottom: 140px;
+         right: 100px;
+         width: 400px;
+         height: 600px;
+         box-shadow: 10px 10px 10px 0px rgba(128,128,128,.6);
+      }
+      &__logo{
+         position: absolute;
+         left:$px_10;
+         top: 5vh;
+         width: 200px;
+         height: 150px;
+ 
+      }
+     }
+    }
+}

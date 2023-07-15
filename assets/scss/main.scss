@@ -1,0 +1,25 @@
+
+
+// shared
+@import'./shared/varible';
+@import'./shared/normalize';
+@import'./shared/mixin';
+
+// blocks
+@import'./blocks/header';
+@import'./blocks/introSection';
+@import'./blocks/underHeader';
+@import'./blocks/slider';
+@import'./blocks/section';
+@import'./blocks/container';
+@import'./blocks/reservation';
+@import'./blocks/privacy';
+@import'./blocks/doctorCards';
+@import'./blocks/footer';
+
+// blocksTurn
+@import'./blocks/takeTurns';
+
+// blocksForm
+@import'./blocks/boxForm';
+@import'./blocks/form';

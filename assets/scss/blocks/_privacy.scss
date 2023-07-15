@@ -1,0 +1,42 @@
+.privacy{
+
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      bottom: $px_25;
+      right: $px_25;
+      z-index: 100;
+      background-color: $bg-white;
+      border-radius: $radius_5px;
+ 
+
+      &__icon{
+        color: $bg-blue;
+        font-size: $px_25;
+        padding: 8px;
+
+      
+
+  
+      }
+
+
+   }
+   @media screen and (min-width:768px) {
+      position: fixed;
+      bottom: $px_32;
+      right: $px_32;
+      z-index: 100;
+      background-color: $bg-white;
+      border-radius: $radius_5px;
+ 
+
+      &__icon{
+        color: $bg-blue;
+        font-size: 45px;
+        padding: $px_10;
+      
+
+  
+      }
+   }
+  }

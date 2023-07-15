@@ -1,0 +1,23 @@
+
+.introSection{
+    background-size: cover;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        height: 560px;
+         .header__title{
+            display: none;
+
+         }
+        .underheader{
+            display: none;
+        }
+        background-image: url(../img/slider-2.jpg);
+    }
+    @media screen and (min-width:768px) {
+        background-image: url(../img/slider3.jpg);
+        height: 900px;
+    }
+
+    
+}

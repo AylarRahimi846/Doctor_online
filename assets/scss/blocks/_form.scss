@@ -1,0 +1,158 @@
+.form{
+
+    @media screen and (max-width: 768px) {
+        
+        height: $width-height_100;
+        width: $width-height_100;
+        color: $bg-white;
+        @include displayFlex(center,center);
+        flex-direction: column;
+   
+   
+        &__title{
+          font-size: $x_large;
+          margin-top: 1px;
+          margin-bottom: $px_10;
+        }
+   
+        &__text{
+           font-size:$medium;
+           margin-bottom: 50px;
+        }
+   
+        &__register{
+           &__input{
+               margin-bottom: 15px;
+   
+               &--second{
+                   padding: 40px 25px;
+                   border-radius: $radius_5px;
+                   border: none;
+                   width: $width-height_100;
+               }
+   
+               &--button{
+                   background-color:$bg_card;
+                   border: none;
+                   border-radius:$radius_5px;
+                   color: $bg-white;
+                   padding: 15px 30px;
+   
+                   &:hover{
+                       background-color: #25bae4;
+                       transform: scale(1.09);
+                   }
+               }
+   
+               &__first{
+                   @include displayFlex(flex-start,center);
+                   flex-direction: column;
+               
+               }
+   
+               &--one{
+                   padding: 10px 25px;
+                   border-radius: $radius_5px;
+                   border: none;
+                   width: $width-height_100;
+                   
+               }
+   
+               &--name{
+                   padding: 10px 70px;
+                   border-radius: $radius_5px;
+                   border: none;
+   
+   
+               }
+   
+               &--phone{
+                   padding: 10px 70px;
+                   border-radius: $radius_5px;
+                   border: none;
+   
+   
+               }
+        }
+       }
+   
+           
+    }
+    @media screen and (min-width:768px) {
+     height: 200px;
+     position: absolute;
+     left: 20rem;
+     top: 8rem;
+     color: $bg-white;
+
+
+     &__title{
+       font-size: $x_large;
+       margin-top: 1px;
+       margin-bottom: $px_10;
+     }
+
+     &__text{
+        font-size: $medium;
+        margin-bottom: 50px;
+     }
+
+     &__register{
+        &__input{
+            margin-bottom: 15px;
+
+            &--second{
+                padding: 40px 25px;
+                border-radius: $radius_5px;
+                border: none;
+                width: $width-height_100;
+            }
+
+            &--button{
+                background-color: $bg_card;
+                border: none;
+                border-radius: $radius_5px;
+                color:$bg-white;
+                padding: 15px 30px;
+
+                &:hover{
+                    background-color: #25bae4;
+                    transform: scale(1.09);
+                }
+            }
+
+            &__first{
+                @include displayFlex(flex-start,center)
+            
+            }
+
+            &--one{
+                padding: 10px 25px;
+                border-radius: $radius_5px;
+                border: none;
+                width: $width-height_100;
+                
+            }
+
+            &--name{
+                padding: 10px 70px;
+                border-radius: $radius_5px;
+                border: none;
+
+
+            }
+
+            &--phone{
+                padding: 10px 70px;
+                margin-right: 40px;
+                border-radius: $radius_5px;
+                border: none;
+
+
+            }
+     }
+    }
+
+        
+     }
+    }

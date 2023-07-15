@@ -1,0 +1,61 @@
+.reservation{
+    @media screen and (max-width: 768px) {
+        background-image: url(../img/p9.jpg);
+        background-size: cover;
+        width: $width-height_100;
+    
+        &__cover{
+            @include displayFlex(center,center);
+            flex-direction: column;
+            background-color: rgba(54, 95, 243,0.6);
+            width: $width-height_100;
+            height: 35vh;  
+            &__text{
+                color: $bg-white;
+                font-size: $px_20;
+                text-align: center;
+                width: 250px;
+            }
+    
+            &__button{
+                font-size: $px_20;
+                color:  $bg-blue;
+                background-color: $bg-white;
+                border-radius: 50px;
+                padding: 15px 60px;
+                margin-left: 2em;
+    
+            }
+        }
+   }
+   @media screen and (min-width:768px) {
+    background-image: url(../img/slider-2.jpg);
+    background-size: cover;
+    width: $width-height_100;
+    height: $height_35;
+
+    &__cover{
+        @include displayFlex(space-between,center);
+        background-color: rgba(54, 95, 243,0.6);
+        width: $width-height_100;
+        height: $height_35;
+
+        &__text{
+            color: $bg-white;
+            font-size: $px_30;
+            margin-right: $margin_2em;
+        }
+
+        &__button{
+            font-size: $px_30;
+            color: $bg-blue;
+            background-color: $bg-white;
+            border-radius: $radius_5px;
+            padding: 40px 60px;
+            margin-left: $margin_2em;
+
+        }
+    }
+   }
+
+}

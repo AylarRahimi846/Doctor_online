@@ -1,0 +1,68 @@
+.section{
+  background-color: $bg-blue;
+    @media screen and (max-width: 768px) {
+      height: 35vh;
+        &__card{
+            @include displayFlex(space-between ,center);
+            padding-top: $rem_2;
+            overflow: scroll;
+            &__first{
+             background-color:$bg-white;
+             margin-right: 2em;
+             padding: 20px 50px;
+             border-radius: $radius_5px;
+             width: 190px;
+             height: 230px;
+
+             &__img{
+                width: 90px;
+             }
+
+             &__text{
+                 text-align: center;
+                 font-size:$px_13;
+
+             }
+             &__button{
+                background-color: $bg_card;
+                border-radius:$radius_5px;
+                color: $bg-white;
+                font-size: $px_10;
+                padding: 10px 16px;
+
+             }
+            }
+            }
+    
+       }
+        
+
+
+   @media screen and (min-width:768px) {
+    width:$width-height_100; 
+    height: 55vh;
+    &__card{
+        @include displayFlex(space-around,center);
+        padding-top: 8rem;
+        &__first{
+         background-color: white;
+         padding: 50px 55px;
+         border-radius: $radius_5px;
+         position: relative;
+         &__text{
+             text-align: center;
+         }
+         &__button{
+            background-color: $bg_card;
+            border-radius:$radius_5px;
+            color: $bg-white;
+            padding: 15px 20px;
+            position: absolute;
+            left: 65px;
+            bottom: -25px;
+         }
+        }
+        }
+
+   }
+}

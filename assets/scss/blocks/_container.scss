@@ -1,0 +1,85 @@
+.container {
+  background-color: $bg-blue;
+
+  @media screen and (max-width: 768px) {
+    height: 480px;
+
+    &__text {
+      @include displayFlex(center, center);
+      flex-direction: column;
+      width: 350px;
+      text-align: center;
+      color: $bg-white;
+      margin-right: 30px;
+
+      &__button {
+        background-color: $bg_card;
+        border-radius:$radius_5px;
+        padding: $padding_15_20px;
+        color: $bg-white;
+        margin-top: 10px;
+      }
+    }
+
+    &__img {
+
+
+      &__right {
+        display: none;
+      }
+
+    }
+
+  }
+
+  @media screen and (min-width:768px) {
+    @include displayFlex(space-between, center);
+    height:$full-vp-height;
+
+    &__img {
+      width: 40rem;
+      height: 65vh;
+      margin-right: 2em;
+
+      &__right {
+        width:$width-height_100;
+        height: $width-height_100;
+        border-radius: $radius_5px;
+
+      }
+    }
+
+    &__text {
+      margin-left: 4em;
+
+      &__title {
+        color: $bg-white;
+        font-size: 40px;
+      }
+
+      &__underTitle {
+        color: $bg-white;
+      }
+
+      &__paragraph {
+        color: $bg-white;
+        font-size: $larger;
+      }
+
+      &__button {
+        background:linear-gradient(90deg, $bg_card 50%, transparent 50%);
+        background-size:100% ;
+        border-radius: $radius_5px;
+        padding: $padding_15_20px;
+        color: $bg-white;
+        margin-top: 70px;
+        transition: 1s;
+
+        &:hover{
+        background-size: 200%;
+        }
+      }
+    }
+  }
+
+}

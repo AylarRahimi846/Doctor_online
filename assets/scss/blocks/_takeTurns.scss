@@ -1,0 +1,61 @@
+.takeTurns{
+
+
+    @media screen and (max-width: 768px) {
+        
+   }
+   @media screen and (min-width:768px) {
+      background-color: $bg_card;
+      @include displayFlex(center, space-around);
+
+      &__box{
+        margin-top:$margin_2em;
+        width: 90rem;
+
+        &__title{
+            color: $bg-white;
+        }
+
+        &__card{
+            @include displayFlex(space-between, center);
+            width: $width-height_100;
+            height: 25vh;
+            background-color: $bg-blue;
+            border-radius: 8px;
+            margin-bottom: $margin_2em;
+
+            &__img{
+            width: 150px;
+            height: 150px;
+            border-radius: $radius_5px;
+            margin-right: $margin_2em;
+            }
+
+            &__part{
+                color: $bg-white;
+            }
+
+            &__icon{
+                font-size: $px_25;
+                color: $bg-white;
+            }
+
+            &__text{
+                font-size: $px_25;
+                color: $bg-white;
+            }
+
+            &__button{
+                background-color: $bg_card;
+                color: $bg-white;
+                font-size: $px_20;
+                border-radius: $px_10;
+                padding: 20px 45px;
+                margin-left: $margin_2em;
+
+            }
+        }
+      }
+ 
+   }
+   }

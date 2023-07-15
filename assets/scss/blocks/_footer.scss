@@ -1,0 +1,41 @@
+.footer{
+    @media screen and (max-width: 768px) {
+
+      &__item{
+        display: none;
+      }
+      &__icon{
+        @include displayFlex(space-around ,center);
+        width: $width-height_100;
+        height: 40px;
+        background-color:$bg_card;
+        color:$bg-white;
+      }
+    }
+    @media screen and (min-width:768px) {
+      height: 400px;
+      background-color:  #13308a;
+      color: $bg-white;
+      @include displayFlex(space-around ,center);
+
+      &__icon{
+        display: none;
+      }
+      
+      &__item{
+        &__title{
+            font-size: $px_30;
+          }
+
+          &__list{
+            list-style-type: none;
+            line-height: 3;
+            font-size: 15px;
+          }
+
+          &__ul{
+            padding: 0;
+          }
+      }
+    }
+}

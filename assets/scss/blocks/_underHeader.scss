@@ -1,0 +1,42 @@
+.underHeader{
+    @media screen and (max-width: 768px) {
+        &__nav{
+            display: none;
+        }
+        &__icon{
+            display: none;
+        }
+   }
+   @media screen and (min-width:768px) {
+    @include displayFlex(space-between, center);
+    background-color: $bg-blue;
+    width:$width-height_100;
+    position: absolute;
+    padding:$padding_10_30px;
+    border-radius:$radius_5px;
+    color:$bg-white;
+    top: 8rem;
+    right:18rem;
+    width: 65%;
+    margin: auto;
+
+    &__nav{
+
+
+      
+        &__button{
+            padding-right: 12px;
+
+        }
+
+    }
+
+    &__icon{
+        &__left{
+            padding-left: 19px;
+        }
+    }
+
+   }
+
+}
